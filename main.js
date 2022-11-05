@@ -149,4 +149,16 @@ function likes(names) {
 }
 
 
-//
+//invert values
+
+// function invert(array) {
+//     let newArr = [];
+//     for(var i = 0; i < array.length; i++){
+//       newArr.push(-array[i]);
+//     }
+//      return newArr;
+//   }
+
+const invert = array => array.map(e => e * -1);
+
+console.log(invert(a));
