@@ -244,3 +244,25 @@ function number(busStops) {
 }
 
 number()
+
+//A Needle in the Haystack
+
+function findNeedle(haystack) {
+    let needle = haystack.indexOf("needle")
+    return `found the needle at position ${needle}`
+}
+
+
+//Calculate average
+
+function findAverage(array) {
+    
+    let sum = array.reduce ((previous,current) => current += previous)
+    let avg = sum /array.length
+    if (avg===[]) {
+        return 0
+    }else {return avg}
+    
+}
+
+//
