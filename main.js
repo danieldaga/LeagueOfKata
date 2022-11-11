@@ -186,3 +186,61 @@ function greet(name) {
 function greet() {
     return "hello world!"
 }
+
+//Opposites Attract
+
+function lovefunc(flower1, flower2) {
+    if (flower1 % 2 == 0 && flower2 % 2 !== 0) {
+        return true;
+    } else if (flower1 % 2 !== 0 && flower2 % 2 == 0) {
+        return true;
+    } else return false;
+}
+console.warn('leageofkata hoy');
+//Multiples of 3 or 5
+
+function solution(number) {
+    let sum = 0
+    if (number <= 0) {
+        return 0
+    }
+    for (let i = 0; i < number; i++) {
+        if (i % 5 === 0 || i % 3 === 0) {
+            sum += i
+        }
+    }
+
+    return sum
+
+
+}
+
+
+console.log(solution(10));
+
+//Square Every Digit
+
+function squareDigits(num) {
+    let numArr = num.toString().split('')
+    let result = ''
+    numArr.forEach(e => {
+        result += `${e ** 2}`
+    })
+    return result * 1
+}
+
+//Number of People in the Bus
+
+function number(busStops) {
+    let montan = 0
+    let exit = 0
+    busStops.forEach(e => {
+        montan += e[0]
+        exit += e[1]
+    })
+    let result = montan - exit
+    return result
+
+}
+
+number()
