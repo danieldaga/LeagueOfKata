@@ -140,10 +140,10 @@ function likes(names) {
         case 2:
             return `${names[0]} and ${names[1]} like this`
             break;
-        case 3: 
+        case 3:
             return `${names[0]}, ${names[1]} and ${names[2]} like this`
         default:
-            return `${names[0]}, ${names[1]} and ${names.length-2} others like this`
+            return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`
             break;
     }
 }
@@ -162,3 +162,27 @@ function likes(names) {
 const invert = array => array.map(e => e * -1);
 
 console.log(invert(a));
+
+
+///Find the smallest integer in the array
+
+class SmallestIntegerFinder {
+    findSmallestInt(args) {
+        for (let i = 0; i < args.length; i++) {
+            Math.min(args[i])
+        }
+        return args
+    }
+}
+
+///Returning Strings
+
+function greet(name) {
+    return `Hello, ${name} how are you doing today?`
+}
+
+////Function 1 - hello world
+
+function greet() {
+    return "hello world!"
+}
