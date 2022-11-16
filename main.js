@@ -318,4 +318,39 @@ function remove(string) {
 //     return summation
 // }
 
-//
+
+// //Regex validate PIN code
+
+// function validatePIN(pin) {
+//     //return true or false
+//     const isCorrectLength = (pin.length === 4 || pin.length === 6);
+//     const isCorrectNumber = pin.match(/^[0-9]+$/);
+//     if (isCorrectLength && isCorrectNumber) {
+//         return true;
+//     }
+//     return false;
+// }
+
+//otra opcion
+
+// function validatePIN(pin) {
+//     let pinArr = pin.split('')
+
+//     let result = true
+
+//     if (pin.length === 4 || pin.length === 6) {
+//         result = true
+//     } else {
+//         return false
+//     }
+//     console.log('SIGUIENTE')
+
+//     let comparative = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
+
+//     pinArr.forEach(e => {
+//         if (!comparative.includes(e)) {
+//             result = false
+//         }
+//     })
+//     return result
+// }
