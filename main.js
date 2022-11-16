@@ -295,7 +295,27 @@ disemvowel("This website is for losers LOL!")
 
 //Shortest Word
 
-    function findShort(s){
-        return Math.min(...s.split(" ").map (s => s.length));
-    }
+function findShort(s) {
+    return Math.min(...s.split(" ").map(s => s.length));
+}
 
+//Exclamation marks series #1: Remove an exclamation mark from the end of string
+
+function remove(string) {
+    if (string.split('')[string.length - 1] === '!') {
+        return string.substr(0, string.length - 1)
+    } else {
+        return string
+    }
+}
+
+//Grasshopper - Summation
+
+// var summation = function (num) {
+//     for (let i = 0; i <= num; i++) {
+//         summation += i
+//     }
+//     return summation
+// }
+
+//
