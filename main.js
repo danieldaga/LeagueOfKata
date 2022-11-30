@@ -354,3 +354,26 @@ function remove(string) {
 //     })
 //     return result
 // }
+
+//Beginner - Lost Without a Map
+
+function maps(x) {
+    return x.map(n => n * 2);
+}
+
+//If you can't sleep, just count sheep!!
+//python
+// def count_sheep(n):
+// result = "";
+// count = 1;
+// while count <= n:
+//     result += str(count) + " sheep...";
+// count += 1;
+// return result;
+
+//Remove string spaces
+
+// function noSpace(x) {
+//     return x.replaceAll(' ','')
+// }
+
